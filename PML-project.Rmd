@@ -63,9 +63,6 @@ For this project, i chose to use the repeated crossvalidation with 10 iterations
 cv <- trainControl(method = "repeatedcv", repeats = 10)
 #modCRT <- train(classe~., data=trs, method = "rpart", trControl = cv)
 load("D:\\CRT-825.rda") #it takes long to train all the models again, so i load them
-library(rattle)
-fancyRpartPlot(modCRT$finalModel)
-#did you notice, that the main dichotomies depend on X? That's why i tried the KNN soultion 
 modCRT
 ```
 <br>
